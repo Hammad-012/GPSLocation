@@ -1,0 +1,95 @@
+{
+    "en": "english",
+    "es": "spanish",
+    "english": {
+      "your_privaccy_is_important_to_us": "Your Privacy is important to us",
+      "1. KIND OF DATA COLLECTION": "1. KIND OF DATA COLLECTION",
+      "1.1 Contacts:": "1.1 Contacts:",
+      "1.2 Account and User Information:": "1.2 Account and User Information:",
+      "2. DISCLOSURE OF PERSONAL INFORMATION:": "2. DISCLOSURE OF PERSONAL INFORMATION:",
+      "3. Security": "3. Security",
+      "4. Child Policy": "4. Child Policy",
+      "5. Support:": "5. Support:",
+      "I read and Accept Privacy Policy": "I read and Accept Privacy Policy"
+    },
+    "spanish": {
+      "your_privaccy_is_important_to_us": "Su privacidad es importante para nosotros",
+      "1. KIND OF DATA COLLECTION": "1.TIPO DE RECOPILACIÓN DE DATOS",
+      "1.1 Contacts:": "1.1 Contactos:",
+      "1.2 Account and User Information:": "1.2 Información de cuenta y usuario:",
+      "2. DISCLOSURE OF PERSONAL INFORMATION:": "2. DIVULGACIÓN DE INFORMACIÓN PERSONAL:",
+      "3. Security": "3. Seguridad",
+      "4. Child Policy": "4. Política infantil",
+      "5. Support:": "5. Apoyo:",
+      "I read and Accept Privacy Policy": "Leo y acepto la Política de Privacida"
+    },
+    "english": [
+      {
+        "h": "Your Privacy is important to us",
+        "p": "We are firmly committed to the security and protection of personal information of our Users and their usage. This Privacy Policy describes how we will collect, use, share and process data. Capitalized terms not defined in this Privacy Policy are defined in our Term of Services Please see the \"Company\" Terms of Service, so you may find more information about how to manage the data you choose to submit to the \"GPS Tracker\". You are entering into the Terms of Service with GPS Tracker and the terms of this Privacy Policy apply to You. By accepting this Privacy Policy and/or using the Services, You consent to the collection, use, sharing and processing of data as described."
+      },
+      {
+        "h": "1. KIND OF DATA COLLECTION",
+        "p": "When You install, access or use our Services we may process the following data of information for the purposes described below."
+      },
+      {
+        "h": "1.1 Contacts:",
+        "p": "The Contacts will be collected and processed by GPS Tracker to provide, user a search functionality,And to display photos of contacts according to friends:\n\n • We will store your contact into secure server, to just provide you the best services. We use administrative, technical, and physical security measures to help protect your data. \n • We provide you photos of the stored contact on your device, so to work these features perfectly we need contact data. \n• We use all the information, we have to help us operate, provide, improve, understand, customize, support, and market our Services. \n• comply with the law, or respond to lawful requests served on us and legal process; \nYou further agree that, You participate in the Enhanced information regarding the contacts contained in Your device's phone book (\"Contact Information\") with other Users in accordance with the GPS Tracker Privacy Policy in order to provide the Services. By allowing Contact Information to be collected, You give GPS Tracker a right to use that Contact Information as a part of the Service and you guarantee that you have any and all permissions required to share such Contact Information with us."
+      },
+      {
+        "h": "1.2 Account and User Information:",
+        "p": "We collect Your name, mobile phone number and email to create Your user account and profile. By creating the user account and profile on the Services, You confirm being the holder of a certain mobile phone number and Company will collect the information provided by You in Your capacity as a User. You may choose to provide additional information for Your user profile such as photo. The information We collect helps to enhance the app and verify our User’s profile. Subject to Your app settings, Your account and User profile information may be visible to the other Users visiting Your profile page.​\nYou will not create a registration with GPS Tracker if you are less than 18 years of age; unless you have permission from a legal guardian, which has a GPS Tracker valid account;"
+      },
+      {
+        "h": "2. DISCLOSURE OF PERSONAL INFORMATION:",
+        "p": "We will not sell, trade, rent or disclose any of the personal information you provide to us for any reason, without your prior consent. Otherwise, your Personal Information will only be disclosed where required or allowable by law.However, no security system is impenetrable and we cannot guarantee the security of our systems 100%. In the event that any information under our control is compromised as a result of a breach of security, we will take reasonable steps to investigate the situation and where appropriate, notify those individuals whose information may have been compromised and take other steps, in accordance with any applicable laws and regulations. ​\n\nIn order to improve the \"GPS Tracker\" quality, you agree that the \"Company\" may make your \"Personal Data\" available to the external technical developers who have entered into the non-disclosure agreement with the \"Company\"."
+      },
+      {
+        "h": "3. Security",
+        "p": "We are continuously implementing and updating appropriate technical and organizational measures to help protect your Personal Data against unauthorized access, loss, destruction, or alteration. Some of the safeguards we use to protect your Personal Data are firewalls and data encryption, and information access controls. If you know or have reason to believe that your account credentials have been lost, stolen, misappropriated, or otherwise compromised or in case of any actual or suspected unauthorized use of your Account, please contact us following the instructions in the “Support” section below."
+      },
+      {
+        "h": "4. Child Policy",
+        "p": "GPS Tracker will not collect the personal information of any children less than 13 years old intentionally. If the parents or guardians of any children find that the children have already provided their personal information to GPS Tracker without approval from them, they shall contact us via [email protected] If GPS Tracker finds any personal information provided by children less than 13 years old, GPS Trackerill delete all related documents, but this does not represent that Caller ID Show Caller Location is able to or obligated to prevent or delete the personal information provided by children less than 13 years old."
+      },
+      {
+        "h": "5. Support:",
+        "p": "If You contact our customer support team, we will receive Your email address, as well as the information You send to us to help resolve your query and problems. We will keep records of our communications with You, including any complaints that we receive from You about the Services, other Users (and from all other Users about You). You can also send Your enquiries (including in relation to any of the grievances) via email to taimoors644@gmail.com"
+      }
+    ],
+    "spanish": [
+      {
+        "h": "Tu privacidad es importante para nosotros",
+        "p": "Estamos firmemente comprometidos con la seguridad y protección de la información personal de nuestros usuarios y su uso. Esta Política de privacidad describe cómo recopilaremos, utilizaremos, compartiremos y procesaremos los datos. Los términos en mayúscula no definidos en esta Política de privacidad están definidos en nuestros Términos de Servicio. Consulte los Términos de servicio de la \"Empresa\", para que pueda encontrar más información sobre cómo administrar los datos que elija enviar al \"GPS Tracker\". Usted está celebrando los Términos de servicio con el GPS Tracker y los términos de esta Política de privacidad se aplican a Usted. Al aceptar esta Política de privacidad y / o utilizar los Servicios, Usted acepta la recopilación, uso, uso compartido y procesamiento de datos como se describe."
+      },
+      {
+        "h": "1. TIPO DE RECOLECCIÓN DE DATOS",
+        "p": "Cuando instale, acceda o utilice nuestros Servicios, podemos procesar la siguiente información o datos para los fines descritos a continuación."
+      },
+      {
+        "h": "1.1 Contactos:",
+        "p": "Los contactos serán recopilados y procesados por GPS Tracker para proporcionar al usuario una funcionalidad de búsqueda, y para mostrar fotos de contactos de acuerdo con amigos:\n\n • Almacenaremos su contacto en un servidor seguro, para proporcionarle los mejores servicios. Utilizamos medidas de seguridad administrativas, técnicas y físicas para ayudar a proteger sus datos. \n • Le proporcionamos fotos del contacto almacenado en su dispositivo, así que para que estas características funcionen perfectamente necesitamos datos de contacto. \n• Utilizamos toda la información que tenemos para ayudarnos a operar, proporcionar, mejorar, comprender, personalizar, respaldar y comercializar nuestros Servicios. \n• cumplir con la ley o responder a solicitudes legales que se nos sirvan y procesos legales; \nAdemás, acepta que, participa en la Información mejorada sobre los contactos contenidos en la libreta de direcciones de su dispositivo (\"Información de contacto\") con otros Usuarios de acuerdo con la Política de privacidad de GPS Tracker para proporcionar los Servicios. Al permitir que se recopile la Información de contacto, usted otorga a GPS Tracker el derecho de utilizar esa Información de contacto como parte del Servicio y garantiza que tiene todos los permisos necesarios para compartir dicha Información de contacto con nosotros."
+      },
+      {
+        "h": "1.2 Cuenta e Información del Usuario:",
+        "p": "Recopilamos su nombre, número de teléfono móvil y correo electrónico para crear su cuenta de usuario y perfil. Al crear la cuenta de usuario y el perfil en los Servicios, confirma ser el titular de un cierto número de teléfono móvil y la Compañía recopilará la información proporcionada por usted en su calidad de Usuario. Puede optar por proporcionar información adicional para su perfil de usuario, como una foto. La información que recopilamos ayuda a mejorar la aplicación y verificar el perfil de nuestros usuarios. Sujeto a la configuración de su aplicación, su información de cuenta y perfil de usuario puede ser visible para los otros Usuarios que visitan su página de perfil.​\nNo creará un registro con GPS Tracker si tiene menos de 18 años; a menos que tenga permiso de un tutor legal, que tenga una cuenta válida de GPS Tracker;"
+      },
+      {
+        "h": "2. DIVULGACIÓN DE INFORMACIÓN PERSONAL:",
+        "p": "No venderemos, intercambiaremos, alquilaremos ni divulgaremos ninguna de la información personal que nos proporcione por ningún motivo, sin su consentimiento previo. De lo contrario, su Información Personal solo se divulgará cuando sea requerida o permitida por la ley. Sin embargo, ningún sistema de seguridad es infalible y no podemos garantizar la seguridad de nuestros sistemas al 100%. En el caso de que alguna información bajo nuestro control se vea comprometida como resultado de una violación de la seguridad, tomaremos medidas razonables para investigar la situación y, cuando corresponda, notificar a aquellas personas cuya información pueda haber sido comprometida y tomar otras medidas, de acuerdo con las leyes y regulaciones aplicables. ​\n\nPara mejorar la calidad del \"GPS Tracker\", acepta que la \"Empresa\" puede poner su \"Datos personales\" a disposición de los desarrolladores técnicos externos que hayan firmado el acuerdo de no divulgación con la \"Empresa\"."
+      },
+      {
+        "h": "3. Seguridad",
+        "p": "Estamos implementando y actualizando continuamente medidas técnicas y organizativas apropiadas para ayudar a proteger sus Datos personales contra el acceso no autorizado, la pérdida, la destrucción o la alteración. Algunas de las salvaguardias que utilizamos para proteger sus Datos personales son firewalls y cifrado de datos, y controles de acceso a la información. Si sabe o tiene motivos para creer que sus credenciales de cuenta se han perdido, robado, malversado o comprometido de alguna otra manera o en caso de uso no autorizado real o sospechado de su Cuenta, contáctenos siguiendo las instrucciones en la sección de “Soporte” a continuación."
+      },
+      {
+        "h": "4. Política de niños",
+        "p": "GPS Tracker no recopilará intencionalmente la información personal de niños menores de 13 años. Si los padres o tutores de algún niño descubren que los niños ya han proporcionado su información personal a GPS Tracker sin su aprobación, deben comunicarse con nosotros a través de [email protected] Si GPS Tracker encuentra alguna información personal proporcionada por niños menores de 13 años, GPS Tracker eliminará todos los documentos relacionados, pero esto no significa que Caller ID Show Caller Location pueda o esté obligado a evitar o eliminar la información personal proporcionada por niños menores de 13 años."
+      },
+      {
+        "h": "5. Soporte:",
+        "p": "Si se pone en contacto con nuestro equipo de atención al cliente, recibiremos su dirección de correo electrónico, así como la información que nos envíe para ayudar a resolver su consulta y problemas. Mantendremos registros de nuestras comunicaciones con usted, incluidas las quejas que recibamos de usted sobre los Servicios, otros Usuarios (y de todos los demás Usuarios sobre usted). También puede enviar sus consultas (incluidas en relación con cualquiera de las quejas) por correo electrónico a taimoors644@gmail.com"
+      }
+    ]
+  }
+  

@@ -1,0 +1,1731 @@
+[
+    {
+        "name": "Afghanistan",
+        "capital": "Kabul",
+        "capital_latitude": "34.98300000",
+        "capital_longitude": "63.13329964",
+        "iso2": "AF"
+    },
+    {
+        "name": "Aland Islands",
+        "capital": "Mariehamn",
+        "capital_latitude": "60.09710000",
+        "capital_longitude": "19.93480000",
+        "iso2": "AX"
+    },
+    {
+        "name": "Albania",
+        "capital": "Tirana",
+        "capital_latitude": "41.51899000",
+        "capital_longitude": "19.79700359",
+        "iso2": "AL"
+    },
+    {
+        "name": "Algeria",
+        "capital": "Algiers",
+        "capital_latitude": "36.82199703",
+        "capital_longitude": "5.76600356",
+        "iso2": "DZ"
+    },
+    {
+        "name": "American Samoa",
+        "capital": "Pago Pago",
+        "capital_latitude": "-14.27661050",
+        "capital_longitude": "-170.70664510",
+        "iso2": "AS"
+    },
+    {
+        "name": "Andorra",
+        "capital": "Andorra la Vella",
+        "capital_latitude": "42.50000144",
+        "capital_longitude": "1.51648596",
+        "iso2": "AD"
+    },
+    {
+        "name": "Angola",
+        "capital": "Luanda",
+        "capital_latitude": "-18.01953449",
+        "capital_longitude": "21.42999914",
+        "iso2": "AO"
+    },
+    {
+        "name": "Anguilla",
+        "capital": "The Valley",
+        "capital_latitude": "18.21480000",
+        "capital_longitude": "63.05740000",
+        "iso2": "AI"
+    },
+    {
+        "name": "Antarctica",
+        "capital": "",
+        "capital_latitude": "-62.17388669",
+        "capital_longitude": "-58.86386407",
+        "iso2": "AQ"
+    },
+    {
+        "name": "Antigua And Barbuda",
+        "capital": "St. John's",
+        "capital_latitude": "17.11803652",
+        "capital_longitude": "-61.85003382",
+        "iso2": "AG"
+    },
+    {
+        "name": "Argentina",
+        "capital": "Buenos Aires",
+        "capital_latitude": "-51.65003986",
+        "capital_longitude": "-72.30001612",
+        "iso2": "AR"
+    },
+    {
+        "name": "Armenia",
+        "capital": "Yerevan",
+        "capital_latitude": "40.30166670",
+        "capital_longitude": "44.35916670",
+        "iso2": "AM"
+    },
+    {
+        "name": "Aruba",
+        "capital": "Oranjestad",
+        "capital_latitude": "12.53038373",
+        "capital_longitude": "-70.02899195",
+        "iso2": "AW"
+    },
+    {
+        "name": "Australia",
+        "capital": "Canberra",
+        "capital_latitude": "-33.42004148",
+        "capital_longitude": "151.30000480",
+        "iso2": "AU"
+    },
+    {
+        "name": "Austria",
+        "capital": "Vienna",
+        "capital_latitude": "47.51669707",
+        "capital_longitude": "9.76670159",
+        "iso2": "AT"
+    },
+    {
+        "name": "Azerbaijan",
+        "capital": "Baku",
+        "capital_latitude": "40.56555560",
+        "capital_longitude": "45.81611110",
+        "iso2": "AZ"
+    },
+    {
+        "name": "Bahamas The",
+        "capital": "Nassau",
+        "capital_latitude": "26.53327578",
+        "capital_longitude": "-78.70001306",
+        "iso2": "BS"
+    },
+    {
+        "name": "Bahrain",
+        "capital": "Manama",
+        "capital_latitude": "26.23613629",
+        "capital_longitude": "50.58305172",
+        "iso2": "BH"
+    },
+    {
+        "name": "Bangladesh",
+        "capital": "Dhaka",
+        "capital_latitude": "24.24997845",
+        "capital_longitude": "89.92003048",
+        "iso2": "BD"
+    },
+    {
+        "name": "Barbados",
+        "capital": "Bridgetown",
+        "capital_latitude": "13.10200258",
+        "capital_longitude": "-59.61652674",
+        "iso2": "BB"
+    },
+    {
+        "name": "Belarus",
+        "capital": "Minsk",
+        "capital_latitude": "53.13684572",
+        "capital_longitude": "26.01344031",
+        "iso2": "BY"
+    },
+    {
+        "name": "Belgium",
+        "capital": "Brussels",
+        "capital_latitude": "50.44599911",
+        "capital_longitude": "3.93900356",
+        "iso2": "BE"
+    },
+    {
+        "name": "Belize",
+        "capital": "Belmopan",
+        "capital_latitude": "17.25100000",
+        "capital_longitude": "88.75900000",
+        "iso2": "BZ"
+    },
+    {
+        "name": "Benin",
+        "capital": "Porto-Novo",
+        "capital_latitude": "6.61500009",
+        "capital_longitude": "1.71500446",
+        "iso2": "BJ"
+    },
+    {
+        "name": "Bermuda",
+        "capital": "Hamilton",
+        "capital_latitude": "32.29419029",
+        "capital_longitude": "-64.78393742",
+        "iso2": "BM"
+    },
+    {
+        "name": "Bhutan",
+        "capital": "Thimphu",
+        "capital_latitude": "27.38330110",
+        "capital_longitude": "89.51670065",
+        "iso2": "BT"
+    },
+    {
+        "name": "Bolivia",
+        "capital": "Sucre",
+        "capital_latitude": "-17.55000242",
+        "capital_longitude": "-65.83997115",
+        "iso2": "BO"
+    },
+    {
+        "name": "Bosnia and Herzegovina",
+        "capital": "Sarajevo",
+        "capital_latitude": "44.21997398",
+        "capital_longitude": "17.91998083",
+        "iso2": "BA"
+    },
+    {
+        "name": "Botswana",
+        "capital": "Gaborone",
+        "capital_latitude": "-24.37700400",
+        "capital_longitude": "26.15200256",
+        "iso2": "BW"
+    },
+    {
+        "name": "Bouvet Island",
+        "capital": "",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "BV"
+    },
+    {
+        "name": "Brazil",
+        "capital": "Brasilia",
+        "capital_latitude": "-5.80999551",
+        "capital_longitude": "-46.14998438",
+        "iso2": "BR"
+    },
+    {
+        "name": "British Indian Ocean Territory",
+        "capital": "Diego Garcia",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "IO"
+    },
+    {
+        "name": "Brunei",
+        "capital": "Bandar Seri Begawan",
+        "capital_latitude": "4.88333112",
+        "capital_longitude": "114.93328410",
+        "iso2": "BN"
+    },
+    {
+        "name": "Bulgaria",
+        "capital": "Sofia",
+        "capital_latitude": "43.13799911",
+        "capital_longitude": "24.71900459",
+        "iso2": "BG"
+    },
+    {
+        "name": "Burkina Faso",
+        "capital": "Ouagadougou",
+        "capital_latitude": "12.05499605",
+        "capital_longitude": "0.36099945",
+        "iso2": "BF"
+    },
+    {
+        "name": "Burundi",
+        "capital": "Bujumbura",
+        "capital_latitude": "-3.16670392",
+        "capital_longitude": "30.51669662",
+        "iso2": "BI"
+    },
+    {
+        "name": "Cambodia",
+        "capital": "Phnom Penh",
+        "capital_latitude": "11.45199610",
+        "capital_longitude": "104.51899860",
+        "iso2": "KH"
+    },
+    {
+        "name": "Cameroon",
+        "capital": "Yaounde",
+        "capital_latitude": "4.15500309",
+        "capital_longitude": "9.23100351",
+        "iso2": "CM"
+    },
+    {
+        "name": "Canada",
+        "capital": "Ottawa",
+        "capital_latitude": "50.15002545",
+        "capital_longitude": "-96.88332178",
+        "iso2": "CA"
+    },
+    {
+        "name": "Cape Verde",
+        "capital": "Praia",
+        "capital_latitude": "16.88376141",
+        "capital_longitude": "-25.00000920",
+        "iso2": "CV"
+    },
+    {
+        "name": "Cayman Islands",
+        "capital": "George Town",
+        "capital_latitude": "19.28043683",
+        "capital_longitude": "-81.32998173",
+        "iso2": "KY"
+    },
+    {
+        "name": "Central African Republic",
+        "capital": "Bangui",
+        "capital_latitude": "4.32000006",
+        "capital_longitude": "21.17999753",
+        "iso2": "CF"
+    },
+    {
+        "name": "Chad",
+        "capital": "N'Djamena",
+        "capital_latitude": "9.39500112",
+        "capital_longitude": "16.30500349",
+        "iso2": "TD"
+    },
+    {
+        "name": "Chile",
+        "capital": "Santiago",
+        "capital_latitude": "-52.64997882",
+        "capital_longitude": "-71.46660445",
+        "iso2": "CL"
+    },
+    {
+        "name": "China",
+        "capital": "Beijing",
+        "capital_latitude": "39.83003522",
+        "capital_longitude": "97.72999304",
+        "iso2": "CN"
+    },
+    {
+        "name": "Christmas Island",
+        "capital": "Flying Fish Cove",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "CX"
+    },
+    {
+        "name": "Cocos (Keeling) Islands",
+        "capital": "West Island",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "CC"
+    },
+    {
+        "name": "Colombia",
+        "capital": "Bogota",
+        "capital_latitude": "5.34699910",
+        "capital_longitude": "-72.40599860",
+        "iso2": "CO"
+    },
+    {
+        "name": "Comoros",
+        "capital": "Moroni",
+        "capital_latitude": "-11.70415770",
+        "capital_longitude": "43.24024410",
+        "iso2": "KM"
+    },
+    {
+        "name": "Congo",
+        "capital": "Brazzaville",
+        "capital_latitude": "-4.16400294",
+        "capital_longitude": "13.55400049",
+        "iso2": "CG"
+    },
+    {
+        "name": "Congo The Democratic Republic Of The",
+        "capital": "Kinshasa",
+        "capital_latitude": "-0.75699889",
+        "capital_longitude": "28.52800254",
+        "iso2": "CD"
+    },
+    {
+        "name": "Cook Islands",
+        "capital": "Avarua",
+        "capital_latitude": "-21.25003497",
+        "capital_longitude": "-159.75000130",
+        "iso2": "CK"
+    },
+    {
+        "name": "Costa Rica",
+        "capital": "San Jose",
+        "capital_latitude": "9.99199799",
+        "capital_longitude": "-84.12000251",
+        "iso2": "CR"
+    },
+    {
+        "name": "Cote D'Ivoire (Ivory Coast)",
+        "capital": "Yamoussoukro",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "CI"
+    },
+    {
+        "name": "Croatia (Hrvatska)",
+        "capital": "Zagreb",
+        "capital_latitude": "43.72722220",
+        "capital_longitude": "15.90583330",
+        "iso2": "HR"
+    },
+    {
+        "name": "Cuba",
+        "capital": "Havana",
+        "capital_latitude": "21.83999636",
+        "capital_longitude": "-78.76194727",
+        "iso2": "CU"
+    },
+    {
+        "name": "Cyprus",
+        "capital": "Nicosia",
+        "capital_latitude": "34.91700310",
+        "capital_longitude": "33.63599757",
+        "iso2": "CY"
+    },
+    {
+        "name": "Czech Republic",
+        "capital": "Prague",
+        "capital_latitude": "50.66299816",
+        "capital_longitude": "14.08100455",
+        "iso2": "CZ"
+    },
+    {
+        "name": "Denmark",
+        "capital": "Copenhagen",
+        "capital_latitude": "55.70900103",
+        "capital_longitude": "9.53499650",
+        "iso2": "DK"
+    },
+    {
+        "name": "Djibouti",
+        "capital": "Djibouti",
+        "capital_latitude": "11.10400201",
+        "capital_longitude": "42.37200058",
+        "iso2": "DJ"
+    },
+    {
+        "name": "Dominica",
+        "capital": "Roseau",
+        "capital_latitude": "15.30101564",
+        "capital_longitude": "-61.38701298",
+        "iso2": "DM"
+    },
+    {
+        "name": "Dominican Republic",
+        "capital": "Santo Domingo",
+        "capital_latitude": "19.50499807",
+        "capital_longitude": "-71.34498854",
+        "iso2": "DO"
+    },
+    {
+        "name": "East Timor",
+        "capital": "Dili",
+        "capital_latitude": "-8.55938841",
+        "capital_longitude": "125.57945590",
+        "iso2": "TL"
+    },
+    {
+        "name": "Ecuador",
+        "capital": "Quito",
+        "capital_latitude": "-1.48300201",
+        "capital_longitude": "-77.98699756",
+        "iso2": "EC"
+    },
+    {
+        "name": "Egypt",
+        "capital": "Cairo",
+        "capital_latitude": "30.59199913",
+        "capital_longitude": "30.89999749",
+        "iso2": "EG"
+    },
+    {
+        "name": "El Salvador",
+        "capital": "San Salvador",
+        "capital_latitude": "13.91900399",
+        "capital_longitude": "-89.84500155",
+        "iso2": "SV"
+    },
+    {
+        "name": "Equatorial Guinea",
+        "capital": "Malabo",
+        "capital_latitude": "1.44999909",
+        "capital_longitude": "10.56670255",
+        "iso2": "GQ"
+    },
+    {
+        "name": "Eritrea",
+        "capital": "Asmara",
+        "capital_latitude": "15.11038129",
+        "capital_longitude": "36.65749345",
+        "iso2": "ER"
+    },
+    {
+        "name": "Estonia",
+        "capital": "Tallinn",
+        "capital_latitude": "58.94305560",
+        "capital_longitude": "23.54138890",
+        "iso2": "EE"
+    },
+    {
+        "name": "Ethiopia",
+        "capital": "Addis Ababa",
+        "capital_latitude": "7.05999608",
+        "capital_longitude": "38.47699862",
+        "iso2": "ET"
+    },
+    {
+        "name": "Falkland Islands",
+        "capital": "Stanley",
+        "capital_latitude": "-51.95058999",
+        "capital_longitude": "-60.08696314",
+        "iso2": "FK"
+    },
+    {
+        "name": "Faroe Islands",
+        "capital": "Torshavn",
+        "capital_latitude": "62.23747830",
+        "capital_longitude": "-6.53901149",
+        "iso2": "FO"
+    },
+    {
+        "name": "Fiji Islands",
+        "capital": "Suva",
+        "capital_latitude": "-17.79959959",
+        "capital_longitude": "177.41660190",
+        "iso2": "FJ"
+    },
+    {
+        "name": "Finland",
+        "capital": "Helsinki",
+        "capital_latitude": "60.16990000",
+        "capital_longitude": "24.93840000",
+        "iso2": "FI"
+    },
+    {
+        "name": "France",
+        "capital": "Paris",
+        "capital_latitude": "45.89997479",
+        "capital_longitude": "6.11667029",
+        "iso2": "FR"
+    },
+    {
+        "name": "French Guiana",
+        "capital": "Cayenne",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "GF"
+    },
+    {
+        "name": "French Polynesia",
+        "capital": "Papeete",
+        "capital_latitude": "-17.53336261",
+        "capital_longitude": "-149.56666940",
+        "iso2": "PF"
+    },
+    {
+        "name": "French Southern Territories",
+        "capital": "Port-aux-Francais",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "TF"
+    },
+    {
+        "name": "Gabon",
+        "capital": "Libreville",
+        "capital_latitude": "2.15299800",
+        "capital_longitude": "11.33000156",
+        "iso2": "GA"
+    },
+    {
+        "name": "Gambia The",
+        "capital": "Banjul",
+        "capital_latitude": "13.55100308",
+        "capital_longitude": "-14.76700152",
+        "iso2": "GM"
+    },
+    {
+        "name": "Georgia",
+        "capital": "Tbilisi",
+        "capital_latitude": "42.24999086",
+        "capital_longitude": "42.72999101",
+        "iso2": "GE"
+    },
+    {
+        "name": "Germany",
+        "capital": "Berlin",
+        "capital_latitude": "49.98247246",
+        "capital_longitude": "8.27321916",
+        "iso2": "DE"
+    },
+    {
+        "name": "Ghana",
+        "capital": "Accra",
+        "capital_latitude": "7.33599899",
+        "capital_longitude": "-2.33600342",
+        "iso2": "GH"
+    },
+    {
+        "name": "Gibraltar",
+        "capital": "Gibraltar",
+        "capital_latitude": "36.13243495",
+        "capital_longitude": "-5.37807483",
+        "iso2": "GI"
+    },
+    {
+        "name": "Greece",
+        "capital": "Athens",
+        "capital_latitude": "38.89899915",
+        "capital_longitude": "22.43400358",
+        "iso2": "GR"
+    },
+    {
+        "name": "Greenland",
+        "capital": "Nuuk",
+        "capital_latitude": "68.81927014",
+        "capital_longitude": "-51.17851854",
+        "iso2": "GL"
+    },
+    {
+        "name": "Grenada",
+        "capital": "St. George's",
+        "capital_latitude": "12.05263340",
+        "capital_longitude": "-61.74164323",
+        "iso2": "GD"
+    },
+    {
+        "name": "Guam",
+        "capital": "Hagatna",
+        "capital_latitude": "13.47001630",
+        "capital_longitude": "144.75001700",
+        "iso2": "GU"
+    },
+    {
+        "name": "Guatemala",
+        "capital": "Guatemala City",
+        "capital_latitude": "15.10299903",
+        "capital_longitude": "-90.31400061",
+        "iso2": "GT"
+    },
+    {
+        "name": "Guernsey and Alderney",
+        "capital": "St Peter Port",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "GG"
+    },
+    {
+        "name": "Guinea",
+        "capital": "Conakry",
+        "capital_latitude": "12.08400302",
+        "capital_longitude": "-12.30100143",
+        "iso2": "GN"
+    },
+    {
+        "name": "Guinea-Bissau",
+        "capital": "Bissau",
+        "capital_latitude": "12.26899803",
+        "capital_longitude": "-16.16499854",
+        "iso2": "GW"
+    },
+    {
+        "name": "Guyana",
+        "capital": "Georgetown",
+        "capital_latitude": "5.90003908",
+        "capital_longitude": "-57.16998356",
+        "iso2": "GY"
+    },
+    {
+        "name": "Haiti",
+        "capital": "Port-au-Prince",
+        "capital_latitude": "18.63393473",
+        "capital_longitude": "-74.11842526",
+        "iso2": "HT"
+    },
+    {
+        "name": "Heard and McDonald Islands",
+        "capital": "",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "HM"
+    },
+    {
+        "name": "Honduras",
+        "capital": "Tegucigalpa",
+        "capital_latitude": "15.05999711",
+        "capital_longitude": "87.29000054",
+        "iso2": "HN"
+    },
+    {
+        "name": "Hong Kong S.A.R.",
+        "capital": "Hong Kong",
+        "capital_latitude": "22.30498090",
+        "capital_longitude": "114.18500930",
+        "iso2": "HK"
+    },
+    {
+        "name": "Hungary",
+        "capital": "Budapest",
+        "capital_latitude": "47.09099714",
+        "capital_longitude": "17.91099957",
+        "iso2": "HU"
+    },
+    {
+        "name": "Iceland",
+        "capital": "Reykjavik",
+        "capital_latitude": "64.56950277",
+        "capital_longitude": "-21.86232219",
+        "iso2": "IS"
+    },
+    {
+        "name": "India",
+        "capital": "New Delhi",
+        "capital_latitude": "15.49199700",
+        "capital_longitude": "73.81800065",
+        "iso2": "IN"
+    },
+    {
+        "name": "Indonesia",
+        "capital": "Jakarta",
+        "capital_latitude": "3.62035911",
+        "capital_longitude": "98.50007524",
+        "iso2": "ID"
+    },
+    {
+        "name": "Iran",
+        "capital": "Tehran",
+        "capital_latitude": "30.65900412",
+        "capital_longitude": "51.59400361",
+        "iso2": "IR"
+    },
+    {
+        "name": "Iraq",
+        "capital": "Baghdad",
+        "capital_latitude": "36.86670013",
+        "capital_longitude": "43.00000263",
+        "iso2": "IQ"
+    },
+    {
+        "name": "Ireland",
+        "capital": "Dublin",
+        "capital_latitude": "53.63333330",
+        "capital_longitude": "-8.18333330",
+        "iso2": "IE"
+    },
+    {
+        "name": "Israel",
+        "capital": "Jerusalem",
+        "capital_latitude": "31.91670012",
+        "capital_longitude": "34.86670252",
+        "iso2": "IL"
+    },
+    {
+        "name": "Italy",
+        "capital": "Rome",
+        "capital_latitude": "40.64200213",
+        "capital_longitude": "15.79899650",
+        "iso2": "IT"
+    },
+    {
+        "name": "Jamaica",
+        "capital": "Kingston",
+        "capital_latitude": "18.44299809",
+        "capital_longitude": "-78.17900362",
+        "iso2": "JM"
+    },
+    {
+        "name": "Japan",
+        "capital": "Tokyo",
+        "capital_latitude": "34.67202964",
+        "capital_longitude": "133.91708650",
+        "iso2": "JP"
+    },
+    {
+        "name": "Jersey",
+        "capital": "Saint Helier",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "JE"
+    },
+    {
+        "name": "Jordan",
+        "capital": "Amman",
+        "capital_latitude": "32.28329707",
+        "capital_longitude": "36.23329852",
+        "iso2": "JO"
+    },
+    {
+        "name": "Kazakhstan",
+        "capital": "Astana",
+        "capital_latitude": "49.62600011",
+        "capital_longitude": "63.49899651",
+        "iso2": "KZ"
+    },
+    {
+        "name": "Kenya",
+        "capital": "Nairobi",
+        "capital_latitude": "1.29210000",
+        "capital_longitude": "36.82190000",
+        "iso2": "KE"
+    },
+    {
+        "name": "Kiribati",
+        "capital": "Tarawa",
+        "capital_latitude": "1.33818751",
+        "capital_longitude": "173.01757080",
+        "iso2": "KI"
+    },
+    {
+        "name": "Korea North\n",
+        "capital": "Pyongyang",
+        "capital_latitude": "38.50700411",
+        "capital_longitude": "125.76200470",
+        "iso2": "KP"
+    },
+    {
+        "name": "Korea South",
+        "capital": "Seoul",
+        "capital_latitude": "36.93525067",
+        "capital_longitude": "127.68971470",
+        "iso2": "KR"
+    },
+    {
+        "name": "Kuwait",
+        "capital": "Kuwait City",
+        "capital_latitude": "29.33334002",
+        "capital_longitude": "47.99999756",
+        "iso2": "KW"
+    },
+    {
+        "name": "Kyrgyzstan",
+        "capital": "Bishkek",
+        "capital_latitude": "42.82987795",
+        "capital_longitude": "75.28459306",
+        "iso2": "KG"
+    },
+    {
+        "name": "Laos",
+        "capital": "Vientiane",
+        "capital_latitude": "20.27750000",
+        "capital_longitude": "100.41277780",
+        "iso2": "LA"
+    },
+    {
+        "name": "Latvia",
+        "capital": "Riga",
+        "capital_latitude": "56.50002545",
+        "capital_longitude": "27.31656490",
+        "iso2": "LV"
+    },
+    {
+        "name": "Lebanon",
+        "capital": "Beirut",
+        "capital_latitude": "33.83330406",
+        "capital_longitude": "35.53329652",
+        "iso2": "LB"
+    },
+    {
+        "name": "Lesotho",
+        "capital": "Maseru",
+        "capital_latitude": "-29.15299794",
+        "capital_longitude": "27.75300351",
+        "iso2": "LS"
+    },
+    {
+        "name": "Liberia",
+        "capital": "Monrovia",
+        "capital_latitude": "4.79999700",
+        "capital_longitude": "-8.16669852",
+        "iso2": "LR"
+    },
+    {
+        "name": "Libya",
+        "capital": "Tripolis",
+        "capital_latitude": "30.16791180",
+        "capital_longitude": "10.45666378",
+        "iso2": "LY"
+    },
+    {
+        "name": "Liechtenstein",
+        "capital": "Vaduz",
+        "capital_latitude": "47.13372377",
+        "capital_longitude": "9.51666947",
+        "iso2": "LI"
+    },
+    {
+        "name": "Lithuania",
+        "capital": "Vilnius",
+        "capital_latitude": "55.74002016",
+        "capital_longitude": "24.37002641",
+        "iso2": "LT"
+    },
+    {
+        "name": "Luxembourg",
+        "capital": "Luxembourg",
+        "capital_latitude": "49.88330105",
+        "capital_longitude": "6.16670156",
+        "iso2": "LU"
+    },
+    {
+        "name": "Macau S.A.R.",
+        "capital": "Macao",
+        "capital_latitude": "22.20299746",
+        "capital_longitude": "113.54504840",
+        "iso2": "MO"
+    },
+    {
+        "name": "Macedonia",
+        "capital": "Skopje",
+        "capital_latitude": "42.00923037",
+        "capital_longitude": "20.97007890",
+        "iso2": "MK"
+    },
+    {
+        "name": "Madagascar",
+        "capital": "Antananarivo",
+        "capital_latitude": "-14.26617186",
+        "capital_longitude": "50.16659135",
+        "iso2": "MG"
+    },
+    {
+        "name": "Malawi",
+        "capital": "Lilongwe",
+        "capital_latitude": "-11.90000000",
+        "capital_longitude": "33.60000000",
+        "iso2": "MW"
+    },
+    {
+        "name": "Malaysia",
+        "capital": "Kuala Lumpur",
+        "capital_latitude": "6.43300199",
+        "capital_longitude": "100.18999870",
+        "iso2": "MY"
+    },
+    {
+        "name": "Maldives",
+        "capital": "Male",
+        "capital_latitude": "4.16670819",
+        "capital_longitude": "73.49994747",
+        "iso2": "MV"
+    },
+    {
+        "name": "Mali",
+        "capital": "Bamako",
+        "capital_latitude": "16.41699404",
+        "capital_longitude": "-3.66658268",
+        "iso2": "ML"
+    },
+    {
+        "name": "Malta",
+        "capital": "Valletta",
+        "capital_latitude": "35.89973248",
+        "capital_longitude": "14.51471065",
+        "iso2": "MT"
+    },
+    {
+        "name": "Marshall Islands",
+        "capital": "Majuro",
+        "capital_latitude": "7.10300431",
+        "capital_longitude": "171.38000020",
+        "iso2": "MH"
+    },
+    {
+        "name": "Martinique",
+        "capital": "Fort-de-France",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "MQ"
+    },
+    {
+        "name": "Mauritania",
+        "capital": "Nouakchott",
+        "capital_latitude": "22.67900113",
+        "capital_longitude": "-12.70700053",
+        "iso2": "MR"
+    },
+    {
+        "name": "Mauritius",
+        "capital": "Port Louis",
+        "capital_latitude": "-20.31619017",
+        "capital_longitude": "57.51663367",
+        "iso2": "MU"
+    },
+    {
+        "name": "Mayotte",
+        "capital": "Mamoudzou",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "YT"
+    },
+    {
+        "name": "Mexico",
+        "capital": "Mexico City",
+        "capital_latitude": "30.76405113",
+        "capital_longitude": "-116.00926030",
+        "iso2": "MX"
+    },
+    {
+        "name": "Micronesia",
+        "capital": "Palikir",
+        "capital_latitude": "6.91664370",
+        "capital_longitude": "158.14997430",
+        "iso2": "FM"
+    },
+    {
+        "name": "Moldova",
+        "capital": "Chisinau",
+        "capital_latitude": "47.26305560",
+        "capital_longitude": "29.16083330",
+        "iso2": "MD"
+    },
+    {
+        "name": "Monaco",
+        "capital": "Monaco",
+        "capital_latitude": "43.73964569",
+        "capital_longitude": "7.40691317",
+        "iso2": "MC"
+    },
+    {
+        "name": "Mongolia",
+        "capital": "Ulan Bator",
+        "capital_latitude": "50.24999712",
+        "capital_longitude": "106.20000060",
+        "iso2": "MN"
+    },
+    {
+        "name": "Montenegro",
+        "capital": "Podgorica",
+        "capital_latitude": "42.46597251",
+        "capital_longitude": "19.26630692",
+        "iso2": "ME"
+    },
+    {
+        "name": "Montserrat",
+        "capital": "Plymouth",
+        "capital_latitude": "16.70650000",
+        "capital_longitude": "62.21570000",
+        "iso2": "MS"
+    },
+    {
+        "name": "Morocco",
+        "capital": "Rabat",
+        "capital_latitude": "35.02038047",
+        "capital_longitude": "-5.90998580",
+        "iso2": "MA"
+    },
+    {
+        "name": "Mozambique",
+        "capital": "Maputo",
+        "capital_latitude": "-16.09954832",
+        "capital_longitude": "33.95001013",
+        "iso2": "MZ"
+    },
+    {
+        "name": "Myanmar",
+        "capital": "Nay Pyi Taw",
+        "capital_latitude": "19.66500009",
+        "capital_longitude": "97.20600363",
+        "iso2": "MM"
+    },
+    {
+        "name": "Namibia",
+        "capital": "Windhoek",
+        "capital_latitude": "-21.43600193",
+        "capital_longitude": "15.95099754",
+        "iso2": "NA"
+    },
+    {
+        "name": "Nauru",
+        "capital": "Yaren",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "NR"
+    },
+    {
+        "name": "Nepal",
+        "capital": "Kathmandu",
+        "capital_latitude": "28.35000004",
+        "capital_longitude": "82.18330255",
+        "iso2": "NP"
+    },
+    {
+        "name": "Netherlands Antilles",
+        "capital": "",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "AN"
+    },
+    {
+        "name": "Netherlands The",
+        "capital": "Amsterdam",
+        "capital_latitude": "53.00000109",
+        "capital_longitude": "6.55000259",
+        "iso2": "NL"
+    },
+    {
+        "name": "Nevis",
+        "capital": "Basse-Terre",
+        "capital_latitude": "15.99660000",
+        "capital_longitude": "61.73170000",
+        "iso2": "GP"
+    },
+    {
+        "name": "New Caledonia",
+        "capital": "Noumea",
+        "capital_latitude": "-22.26252776",
+        "capital_longitude": "166.44428520",
+        "iso2": "NC"
+    },
+    {
+        "name": "New Zealand",
+        "capital": "Wellington",
+        "capital_latitude": "-42.47274975",
+        "capital_longitude": "171.20872460",
+        "iso2": "NZ"
+    },
+    {
+        "name": "Nicaragua",
+        "capital": "Managua",
+        "capital_latitude": "13.47599712",
+        "capital_longitude": "-86.58299659",
+        "iso2": "NI"
+    },
+    {
+        "name": "Niger",
+        "capital": "Niamey",
+        "capital_latitude": "13.98740074",
+        "capital_longitude": "10.27000850",
+        "iso2": "NE"
+    },
+    {
+        "name": "Nigeria",
+        "capital": "Abuja",
+        "capital_latitude": "5.53200304",
+        "capital_longitude": "7.48600249",
+        "iso2": "NG"
+    },
+    {
+        "name": "Niue",
+        "capital": "Alofi",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "NU"
+    },
+    {
+        "name": "Norfolk Island",
+        "capital": "Kingston",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "NF"
+    },
+    {
+        "name": "Northern Mariana Islands",
+        "capital": "Saipan",
+        "capital_latitude": "15.21125368",
+        "capital_longitude": "145.75057610",
+        "iso2": "MP"
+    },
+    {
+        "name": "Norway",
+        "capital": "Oslo",
+        "capital_latitude": "58.46475606",
+        "capital_longitude": "8.76600055",
+        "iso2": "NO"
+    },
+    {
+        "name": "Oman",
+        "capital": "Muscat",
+        "capital_latitude": "23.30318870",
+        "capital_longitude": "57.97820756",
+        "iso2": "OM"
+    },
+    {
+        "name": "Pakistan",
+        "capital": "Islamabad",
+        "capital_latitude": "33.61637230",
+        "capital_longitude": "72.80592290",
+        "iso2": "PK"
+    },
+    {
+        "name": "Palau",
+        "capital": "Melekeok",
+        "capital_latitude": "7.34522636",
+        "capital_longitude": "134.46950090",
+        "iso2": "PW"
+    },
+    {
+        "name": "Palestinian Territory Occupied",
+        "capital": "East Jerusalem",
+        "capital_latitude": "31.90294475",
+        "capital_longitude": "35.20620938",
+        "iso2": "PS"
+    },
+    {
+        "name": "Panama",
+        "capital": "Panama City",
+        "capital_latitude": "9.54168636",
+        "capital_longitude": "-78.97196299",
+        "iso2": "PA"
+    },
+    {
+        "name": "Papua new Guinea",
+        "capital": "Port Moresby",
+        "capital_latitude": "-5.49000001",
+        "capital_longitude": "143.71800370",
+        "iso2": "PG"
+    },
+    {
+        "name": "Paraguay",
+        "capital": "Asuncion",
+        "capital_latitude": "-22.03000205",
+        "capital_longitude": "-60.60999555",
+        "iso2": "PY"
+    },
+    {
+        "name": "Peru",
+        "capital": "Lima",
+        "capital_latitude": "-6.62999713",
+        "capital_longitude": "-79.80002344",
+        "iso2": "PE"
+    },
+    {
+        "name": "Philippines",
+        "capital": "Manila",
+        "capital_latitude": "10.55037539",
+        "capital_longitude": "123.38000360",
+        "iso2": "PH"
+    },
+    {
+        "name": "Pitcairn Island",
+        "capital": "Adamstown",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "PN"
+    },
+    {
+        "name": "Poland",
+        "capital": "Warsaw",
+        "capital_latitude": "53.80003522",
+        "capital_longitude": "20.48003129",
+        "iso2": "PL"
+    },
+    {
+        "name": "Portugal",
+        "capital": "Lisbon",
+        "capital_latitude": "40.64100311",
+        "capital_longitude": "-8.65099753",
+        "iso2": "PT"
+    },
+    {
+        "name": "Puerto Rico",
+        "capital": "San Juan",
+        "capital_latitude": "18.00038576",
+        "capital_longitude": "-66.61664209",
+        "iso2": "PR"
+    },
+    {
+        "name": "Qatar",
+        "capital": "Doha",
+        "capital_latitude": "25.28655601",
+        "capital_longitude": "51.53296789",
+        "iso2": "QA"
+    },
+    {
+        "name": "Reunion",
+        "capital": "Saint-Denis",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "RE"
+    },
+    {
+        "name": "Romania",
+        "capital": "Bucharest",
+        "capital_latitude": "45.04500004",
+        "capital_longitude": "23.27400062",
+        "iso2": "RO"
+    },
+    {
+        "name": "Russia",
+        "capital": "Moscow",
+        "capital_latitude": "43.23300312",
+        "capital_longitude": "44.78300151",
+        "iso2": "RU"
+    },
+    {
+        "name": "Rwanda",
+        "capital": "Kigali",
+        "capital_latitude": "-2.48329795",
+        "capital_longitude": "29.56670160",
+        "iso2": "RW"
+    },
+    {
+        "name": "Saint Helena",
+        "capital": "Jamestown",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "SH"
+    },
+    {
+        "name": "Saint Kitts And Nevis",
+        "capital": "Basseterre",
+        "capital_latitude": "17.30203046",
+        "capital_longitude": "-62.71700932",
+        "iso2": "KN"
+    },
+    {
+        "name": "Saint Lucia",
+        "capital": "Castries",
+        "capital_latitude": "14.00197349",
+        "capital_longitude": "-61.00000818",
+        "iso2": "LC"
+    },
+    {
+        "name": "Saint Pierre and Miquelon",
+        "capital": "Saint-Pierre",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "PM"
+    },
+    {
+        "name": "Saint Vincent And The Grenadines",
+        "capital": "Kingstown",
+        "capital_latitude": "13.14827883",
+        "capital_longitude": "-61.21206242",
+        "iso2": "VC"
+    },
+    {
+        "name": "Saint-Barthelemy",
+        "capital": "Gustavia",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "BL"
+    },
+    {
+        "name": "Saint-Martin (French part)",
+        "capital": "Marigot",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "MF"
+    },
+    {
+        "name": "Samoa",
+        "capital": "Apia",
+        "capital_latitude": "-13.84154504",
+        "capital_longitude": "-171.73864160",
+        "iso2": "WS"
+    },
+    {
+        "name": "San Marino",
+        "capital": "San Marino",
+        "capital_latitude": "14.34400210",
+        "capital_longitude": "-16.41599952",
+        "iso2": "SM"
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "capital": "Sao Tome",
+        "capital_latitude": "1.64500205",
+        "capital_longitude": "7.41200448",
+        "iso2": "ST"
+    },
+    {
+        "name": "Saudi Arabia",
+        "capital": "Riyadh",
+        "capital_latitude": "31.33330205",
+        "capital_longitude": "37.33329653",
+        "iso2": "SA"
+    },
+    {
+        "name": "Senegal",
+        "capital": "Dakar",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "SN"
+    },
+    {
+        "name": "Serbia",
+        "capital": "Belgrade",
+        "capital_latitude": "46.07001609",
+        "capital_longitude": "19.68002844",
+        "iso2": "RS"
+    },
+    {
+        "name": "Seychelles",
+        "capital": "Victoria",
+        "capital_latitude": "-4.61663165",
+        "capital_longitude": "55.44998979",
+        "iso2": "SC"
+    },
+    {
+        "name": "Sierra Leone",
+        "capital": "Freetown",
+        "capital_latitude": "8.88042564",
+        "capital_longitude": "-12.04997278",
+        "iso2": "SL"
+    },
+    {
+        "name": "Singapore",
+        "capital": "Singapur",
+        "capital_latitude": "1.29303347",
+        "capital_longitude": "103.85582070",
+        "iso2": "SG"
+    },
+    {
+        "name": "Slovakia",
+        "capital": "Bratislava",
+        "capital_latitude": "48.73329022",
+        "capital_longitude": "19.14998328",
+        "iso2": "SK"
+    },
+    {
+        "name": "Slovenia",
+        "capital": "Ljubljana",
+        "capital_latitude": "46.54047833",
+        "capital_longitude": "15.65004187",
+        "iso2": "SI"
+    },
+    {
+        "name": "Solomon Islands",
+        "capital": "Honiara",
+        "capital_latitude": "-8.09962319",
+        "capital_longitude": "156.83501580",
+        "iso2": "SB"
+    },
+    {
+        "name": "Somalia",
+        "capital": "Mogadishu",
+        "capital_latitude": "4.18329897",
+        "capital_longitude": "43.86670261",
+        "iso2": "SO"
+    },
+    {
+        "name": "South Africa",
+        "capital": "Pretoria",
+        "capital_latitude": "-30.11726692",
+        "capital_longitude": "28.70199951",
+        "iso2": "ZA"
+    },
+    {
+        "name": "South Georgia",
+        "capital": "Grytviken",
+        "capital_latitude": "-54.28057697",
+        "capital_longitude": "-36.50798893",
+        "iso2": "GS"
+    },
+    {
+        "name": "South Sudan",
+        "capital": "Juba",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "SS"
+    },
+    {
+        "name": "Spain",
+        "capital": "Madrid",
+        "capital_latitude": "38.91200402",
+        "capital_longitude": "-6.33799751",
+        "iso2": "ES"
+    },
+    {
+        "name": "Sri Lanka",
+        "capital": "Colombo",
+        "capital_latitude": "8.56899904",
+        "capital_longitude": "81.23300155",
+        "iso2": "LK"
+    },
+    {
+        "name": "Sudan",
+        "capital": "Khartoum",
+        "capital_latitude": "11.77040428",
+        "capital_longitude": "34.34998572",
+        "iso2": "SD"
+    },
+    {
+        "name": "Suriname",
+        "capital": "Paramaribo",
+        "capital_latitude": "5.59999813",
+        "capital_longitude": "-55.19999648",
+        "iso2": "SR"
+    },
+    {
+        "name": "Svalbard And Jan Mayen Islands",
+        "capital": "Longyearbyen",
+        "capital_latitude": "78.21668439",
+        "capital_longitude": "15.54999630",
+        "iso2": "SJ"
+    },
+    {
+        "name": "Swaziland",
+        "capital": "Mbabane",
+        "capital_latitude": "-25.96100399",
+        "capital_longitude": "31.24700150",
+        "iso2": "SZ"
+    },
+    {
+        "name": "Sweden",
+        "capital": "Stockholm",
+        "capital_latitude": "60.61300204",
+        "capital_longitude": "15.64700455",
+        "iso2": "SE"
+    },
+    {
+        "name": "Switzerland",
+        "capital": "Berne",
+        "capital_latitude": "47.36999713",
+        "capital_longitude": "7.34499949",
+        "iso2": "CH"
+    },
+    {
+        "name": "Syria",
+        "capital": "Damascus",
+        "capital_latitude": "32.62500014",
+        "capital_longitude": "36.10500351",
+        "iso2": "SY"
+    },
+    {
+        "name": "Taiwan",
+        "capital": "Taipei",
+        "capital_latitude": "24.95750000",
+        "capital_longitude": "121.29888890",
+        "iso2": "TW"
+    },
+    {
+        "name": "Tajikistan",
+        "capital": "Dushanbe",
+        "capital_latitude": "39.75000301",
+        "capital_longitude": "69.00000365",
+        "iso2": "TJ"
+    },
+    {
+        "name": "Tanzania",
+        "capital": "Dodoma",
+        "capital_latitude": "-5.06346396",
+        "capital_longitude": "39.72579900",
+        "iso2": "TZ"
+    },
+    {
+        "name": "Thailand",
+        "capital": "Bangkok",
+        "capital_latitude": "19.30100405",
+        "capital_longitude": "97.96899665",
+        "iso2": "TH"
+    },
+    {
+        "name": "Togo",
+        "capital": "Lome",
+        "capital_latitude": "9.26100007",
+        "capital_longitude": "0.78900357",
+        "iso2": "TG"
+    },
+    {
+        "name": "Tokelau",
+        "capital": "",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "TK"
+    },
+    {
+        "name": "Tonga",
+        "capital": "Nuku'alofa",
+        "capital_latitude": "-18.64957355",
+        "capital_longitude": "-173.98329270",
+        "iso2": "TO"
+    },
+    {
+        "name": "Trinidad And Tobago",
+        "capital": "Port of Spain",
+        "capital_latitude": "10.28046166",
+        "capital_longitude": "-61.45937678",
+        "iso2": "TT"
+    },
+    {
+        "name": "Tunisia",
+        "capital": "Tunis",
+        "capital_latitude": "33.39999900",
+        "capital_longitude": "10.41669956",
+        "iso2": "TN"
+    },
+    {
+        "name": "Turkey",
+        "capital": "Ankara",
+        "capital_latitude": "41.74299917",
+        "capital_longitude": "27.22599962",
+        "iso2": "TR"
+    },
+    {
+        "name": "Turkmenistan",
+        "capital": "Ashgabat",
+        "capital_latitude": "38.97553957",
+        "capital_longitude": "56.27779455",
+        "iso2": "TM"
+    },
+    {
+        "name": "Turks And Caicos Islands",
+        "capital": "Cockburn Town",
+        "capital_latitude": "21.46642743",
+        "capital_longitude": "-71.13597864",
+        "iso2": "TC"
+    },
+    {
+        "name": "Tuvalu",
+        "capital": "Funafuti",
+        "capital_latitude": "-8.51665200",
+        "capital_longitude": "179.21664710",
+        "iso2": "TV"
+    },
+    {
+        "name": "Uganda",
+        "capital": "Kampala",
+        "capital_latitude": "-0.30888890",
+        "capital_longitude": "32.22500000",
+        "iso2": "UG"
+    },
+    {
+        "name": "Ukraine",
+        "capital": "Kiev",
+        "capital_latitude": "46.96773907",
+        "capital_longitude": "31.98434200",
+        "iso2": "UA"
+    },
+    {
+        "name": "United Arab Emirates",
+        "capital": "Abu Dhabi",
+        "capital_latitude": "25.56527285",
+        "capital_longitude": "55.55334265",
+        "iso2": "AE"
+    },
+    {
+        "name": "United Kingdom",
+        "capital": "Douglas, Isle of Man",
+        "capital_latitude": "54.15230000",
+        "capital_longitude": "4.48610000",
+        "iso2": "IM"
+    },
+    {
+        "name": "United Kingdom",
+        "capital": "London",
+        "capital_latitude": "55.93329002",
+        "capital_longitude": "-4.75003076",
+        "iso2": "GB"
+    },
+    {
+        "name": "United States",
+        "capital": "Washington",
+        "capital_latitude": "44.29048647",
+        "capital_longitude": "-93.26801274",
+        "iso2": "US"
+    },
+    {
+        "name": "United States Minor Outlying Islands",
+        "capital": "",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "UM"
+    },
+    {
+        "name": "Uruguay",
+        "capital": "Montevideo",
+        "capital_latitude": "-34.47999901",
+        "capital_longitude": "-57.84000247",
+        "iso2": "UY"
+    },
+    {
+        "name": "Uzbekistan",
+        "capital": "Tashkent",
+        "capital_latitude": "42.40471010",
+        "capital_longitude": "59.45165767",
+        "iso2": "UZ"
+    },
+    {
+        "name": "Vanuatu",
+        "capital": "Port Vila",
+        "capital_latitude": "-15.51255573",
+        "capital_longitude": "167.17660680",
+        "iso2": "VU"
+    },
+    {
+        "name": "Vatican City State (Holy See)",
+        "capital": "Vatican City",
+        "capital_latitude": "41.90001223",
+        "capital_longitude": "12.44780839",
+        "iso2": "VA"
+    },
+    {
+        "name": "Venezuela",
+        "capital": "Caracas",
+        "capital_latitude": "9.65799901",
+        "capital_longitude": "-68.58999854",
+        "iso2": "VE"
+    },
+    {
+        "name": "Vietnam",
+        "capital": "Hanoi",
+        "capital_latitude": "11.32299911",
+        "capital_longitude": "106.14699970",
+        "iso2": "VN"
+    },
+    {
+        "name": "Virgin Islands (British)",
+        "capital": "Road Town",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "VG"
+    },
+    {
+        "name": "Virgin Islands (US)",
+        "capital": "Charlotte Amalie",
+        "capital_latitude": "17.75037518",
+        "capital_longitude": "-64.74998600",
+        "iso2": "VI"
+    },
+    {
+        "name": "Wallis And Futuna Islands",
+        "capital": "Mata Utu",
+        "capital_latitude": "0.00000000",
+        "capital_longitude": "0.00000000",
+        "iso2": "WF"
+    },
+    {
+        "name": "Western Sahara",
+        "capital": "El-Aaiun",
+        "capital_latitude": "26.11916669",
+        "capital_longitude": "-9.65252222",
+        "iso2": "EH"
+    },
+    {
+        "name": "Yemen",
+        "capital": "Sanaa",
+        "capital_latitude": "13.97899810",
+        "capital_longitude": "45.57400265",
+        "iso2": "YE"
+    },
+    {
+        "name": "Zambia",
+        "capital": "Lusaka",
+        "capital_latitude": "-9.77952065",
+        "capital_longitude": "29.08002315",
+        "iso2": "ZM"
+    },
+    {
+        "name": "Zimbabwe",
+        "capital": "Harare",
+        "capital_latitude": "-17.51961668",
+        "capital_longitude": "30.97003699",
+        "iso2": "ZW"
+    }
+]

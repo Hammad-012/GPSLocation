@@ -1,0 +1,11 @@
+diff --git a/node_modules/react-native-admob-native-ads/react-native-admob-native-ads.podspec b/node_modules/react-native-admob-native-ads/react-native-admob-native-ads.podspec
+index 975b6d9..1d9ded1 100755
+--- a/node_modules/react-native-admob-native-ads/react-native-admob-native-ads.podspec
++++ b/node_modules/react-native-admob-native-ads/react-native-admob-native-ads.podspec
+@@ -27,5 +27,5 @@ Pod::Spec.new do |s|
+   }
+ 
+   s.dependency 'React-Core'
+-  s.dependency 'Google-Mobile-Ads-SDK'
++  s.dependency 'Google-Mobile-Ads-SDK', '10.14.0'
+ end

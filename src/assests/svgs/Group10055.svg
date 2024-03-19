@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_10055" data-name="Group 10055" transform="translate(17 -760)">
+    <g id="Group_10054" data-name="Group 10054" transform="translate(15 0.139)">
+      <path id="Path_1982" data-name="Path 1982" d="M11.125,22.25A11.125,11.125,0,1,1,22.25,11.125,11.137,11.137,0,0,1,11.125,22.25M11.125.7A10.422,10.422,0,1,0,21.547,11.125,10.433,10.433,0,0,0,11.125.7" transform="translate(-31 760.861)" stroke="#1d2438" stroke-width="0.9"/>
+      <path id="Path_1983" data-name="Path 1983" d="M17.019,16.485l-3.849-6.3a1.033,1.033,0,0,0-.349-.349l-6.3-3.849a.442.442,0,0,0-.29-.009.425.425,0,0,0-.253.534l3.73,6.4a1.052,1.052,0,0,0,.379.379l6.4,3.73a.375.375,0,0,0,.431-.1.362.362,0,0,0,.1-.431M11.447,11.54h0a1.049,1.049,0,0,1,1.637.2L15.076,15a.084.084,0,0,1-.113.116l-3.3-1.928a1.049,1.049,0,0,1-.212-1.651" transform="translate(-31.376 760.485)" fill="#1d2438"/>
+      <rect id="Rectangle_1020" data-name="Rectangle 1020" width="22.25" height="22.25" transform="translate(-31 760.861)" fill="none"/>
+    </g>
+    <rect id="Rectangle_1021" data-name="Rectangle 1021" width="24" height="24" transform="translate(-17 760)" fill="#fff" opacity="0"/>
+  </g>
+</svg>
