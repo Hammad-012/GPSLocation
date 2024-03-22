@@ -55,7 +55,7 @@ const AdPlacescreen = () => {
   const [locationAlert, setLocationAlert] = useState({
     id: '',
     name: '',
-    radius: 200,
+    radius: 1000,
     is_notification: false,
     is_in_radius: false,
     arrival_time: null,
@@ -165,7 +165,6 @@ const AdPlacescreen = () => {
   });
   const [selectedLayer, setSelectedLayer] = useState('standard');
   const [title, setTitle] = useState('Rawalpindi');
-  const [zoomLevel, setZoomLevel] = useState(15);
   // const [markerCoordinate, setMarkerCoordinate] = useState({
   //   latitude: currentLocation.latitude,
   //   longitude: currentLocation.longitude,
@@ -278,8 +277,8 @@ const AdPlacescreen = () => {
           initialRegion={{
             latitude: currentLocation.latitude,
             longitude: currentLocation.longitude,
-            latitudeDelta: 0.05 * zoomLevel,
-            longitudeDelta: 0.05 * zoomLevel,
+            latitudeDelta: 0.05 ,
+            longitudeDelta: 0.05,
           }}
           
           zoomEnabled={true}

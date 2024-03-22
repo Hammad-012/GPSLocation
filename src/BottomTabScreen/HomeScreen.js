@@ -16,21 +16,22 @@ import { useNavigation } from '@react-navigation/native';
 import DeviceInfo from 'react-native-device-info';
 import Geolocation from '@react-native-community/geolocation';
 import CustomHeader from '../components/CustomHeader';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useInterstitialAd, TestIds } from 'react-native-google-mobile-ads';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AppOpenAd, AdEventType } from 'react-native-google-mobile-ads';
 import { onMoveToBackground,onMoveToForeground } from '@quan2nd/react-native-activity-state';
+import { setLocation } from '../store/actions/userAction';
 const HomeScreen = () => {
   const adUnitId = __DEV__ ? TestIds.APP_OPEN : ''
   const appOpenAd = AppOpenAd.createForAdRequest(adUnitId, {
     keywords: ['fashion', 'clothing'],
   });
+  const dispatch = useDispatch()
   const { isLoaded, isClosed, load, show,isOpened,isShowing,error } = useInterstitialAd(TestIds.INTERSTITIAL);
   const [route,setRoute] = useState(null);
   const {selectedLanguage} = useSelector(state =>  state.languageReducer)
   const navigation = useNavigation();
-  const [batteryLevel,setbatteryLevel] = useState(null);
   const [currentAddress, setCurrentAddress] = useState('');
   useEffect(() => {
     const subscriptionFore = onMoveToForeground(async () => {
@@ -42,11 +43,9 @@ const HomeScreen = () => {
       })
       
     });
-  
     const subscriptionBack = onMoveToBackground(() => {
-      appOpenAd.load();
+     ! appOpenAd.loaded && appOpenAd.load();
     })
-  
     },[]);
   useEffect(() => {
     if (error !== undefined) {
@@ -87,6 +86,7 @@ const HomeScreen = () => {
     Geolocation.getCurrentPosition(
       position => {
         console.log('GSGSGSG',position);
+        dispatch(setLocation(position))
         const { latitude, longitude } = position.coords;
         getAddressFromCoords(latitude, longitude);
       },
@@ -156,7 +156,7 @@ const HomeScreen = () => {
     <View style={{flex: 1, backgroundColor: '#fff'}}>
       <View style={{flexDirection: 'row',columnGap:10}}>
        <CustomHeader />
-        <View style={{marginTop: 15}}>
+        <View style={{marginTop: 20}}>
           <Text style={{color: '#3972FE', fontSize: 15, fontFamily: fonts.SemiBold,fontWeight:'700'}}>
             GPS{' '}
             <Text style={{color: '#1E1F4B', fontSize: 15, fontFamily: fonts.SemiBold,fontWeight:'700'}}>
@@ -168,7 +168,7 @@ const HomeScreen = () => {
       <View>
         <Text
         ellipsizeMode={'tail'}
-        numberOfLines={2}
+         numberOfLines={2}
           style={{
             color: '#1E1F4B',
             fontSize: 12,
@@ -181,7 +181,7 @@ const HomeScreen = () => {
         </Text>
       </View>
       <View style={{flexDirection: 'row', marginTop: 10,justifyContent:'center',alignItems:'center'}}>
-        <TouchableOpacity onPress={handleGpsTracker}>
+        <TouchableOpacity onPress={()=>handleGpsTracker()}>
         <View style={styles.GPSContainer}>
           <LocatonMapIcon
             height={50}
@@ -339,9 +339,7 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  HumbergIcon: {
-    margin: 15,
-  },
+ 
   GPSContainer: {
     margin:8,
     alignSelf:'center',

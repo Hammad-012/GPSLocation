@@ -93,7 +93,7 @@ import { AppState, StyleSheet, View } from 'react-native';
     iconView:{
       marginLeft: 20,
       width: 50,
-      height:30,
+      height:40,
     },
     headingTitle:{
       color: '#060606',
@@ -121,6 +121,7 @@ import { AppState, StyleSheet, View } from 'react-native';
       width: 18,
       height: 14,
       borderWidth: 1,
+      backgroundColor:'red',
       borderColor: '#f9f9f9',
       justifyContent: 'center',
       alignItems: 'center',
@@ -128,7 +129,7 @@ import { AppState, StyleSheet, View } from 'react-native';
     },
     AdBadgeText: {
       fontSize: 6,
-      color: '#077b8a',
+      color:'#fff',
       includeFontPadding: false,
     },
     imageView:{
@@ -152,7 +153,7 @@ import { AppState, StyleSheet, View } from 'react-native';
       height: 30,
       width: SCREEN_WIDTH - 10,
       paddingHorizontal: 12,
-      backgroundColor: '#077b8a',
+      backgroundColor: '#223FD3',
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 10,

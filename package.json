@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "npx react-native run-android",
+    "android": "npx react-native run-android --mode='release'",
     "iphone15": "npx react-native run-ios --simulator='iPhone 15 Pro'",
     "lint": "eslint .",
     "start": "react-native start",
@@ -100,5 +100,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "resolutions": {
+    "stacktrace-parser": "0.1.4"
   }
 }

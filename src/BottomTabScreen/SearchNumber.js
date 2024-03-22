@@ -24,12 +24,22 @@ import CustomHeader from '../components/CustomHeader';
 import NumberSearchInput from '../components/NumberSearchInput';
 import Geolocation from '@react-native-community/geolocation';
 import { SearchNumberValidationIOS,search_mobileNumber } from '../Validation/SearchNumberValidation';
+import { useInterstitialAd, TestIds } from 'react-native-google-mobile-ads';
+import { AppOpenAd, AdEventType } from 'react-native-google-mobile-ads';
+import { onMoveToBackground,onMoveToForeground } from '@quan2nd/react-native-activity-state';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 const SearchNumber = ({navigation,searchCountry}) => {
+  const adUnitId = __DEV__ ? TestIds.APP_OPEN : ''
+  const appOpenAd = AppOpenAd.createForAdRequest(adUnitId, {
+    keywords: ['fashion', 'clothing'],
+  });
+  const { isLoaded, isClosed, load, show,isOpened,isShowing,error } = useInterstitialAd(TestIds.INTERSTITIAL);
+  const [route,setRoute] = useState(null);
   const {selectedLanguage} = useSelector(state=>state.languageReducer);
-  console.log('selected',selectedLanguage);
+
   const dispatch = useDispatch();
   const {country} = useSelector(state => state.countryReducer);
-  console.log('countries',country);
+
   const [selectedCountry, setSelectedCountry] = useState();
   const [showDropdown, setShowDropdown] = useState(false);
   
@@ -49,7 +59,53 @@ const SearchNumber = ({navigation,searchCountry}) => {
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
+  useEffect(() => {
+    const subscriptionFore = onMoveToForeground(async () => {
+      AsyncStorage.getItem("canShowAppOpenAd").then((value) => {
+        console.log("canShowAppOpenAd in AsyncStorage", value);
+        if(value != null  && value != "false" && appOpenAd.loaded){
+          appOpenAd.show();
+        }
+      })
+      
+    });
   
+    const subscriptionBack = onMoveToBackground(() => {
+      appOpenAd.load();
+    })
+  
+    },[]);
+  useEffect(() => {
+    if (error !== undefined) {
+      AsyncStorage.setItem('canShowAppOpenAd', 'true');
+      console.log('ERROR',error);
+      navigation.navigate(route)
+    }
+  }, [error]);
+
+  useEffect(() => {
+    if (isLoaded) {
+      show();
+      console.log('ISLOADED');
+      AsyncStorage.setItem('canShowAppOpenAd', 'false');
+    }
+  }, [isLoaded]);
+
+  useEffect(() => {
+    if (isClosed) {
+      console.log('ISCLOSED',isClosed);
+      AsyncStorage.setItem('canShowAppOpenAd', 'true');
+     
+    }
+  }, [isClosed]);
+
+  useEffect(() => {
+    if (isOpened) { 
+      console.log('ISOPENED',isOpened);
+      AsyncStorage.setItem('canShowAppOpenAd', 'false');
+      navigation.navigate(route, {item:dataresult,selectedCountry:selectedCountry,mobile_number:mobile_number})
+    }
+  }, [isOpened]);
 
   useEffect(() => {
     
@@ -75,19 +131,11 @@ const SearchNumber = ({navigation,searchCountry}) => {
     );
   }, [selectedCountry])
   
-  // useEffect(() => {
-  //   if (route.params.number == mobile_number) {
-  //     getNamefromContactList();
-  //     SearchNumberOnline(item);
-  //   }
-  //   return () => timeout !== null && clearTimeout(timeout);
-  // }, []);
-
-
-
  
   const SearchNumberOnline = () => {
     setLoading(true);
+    load()
+    setRoute(AuthRoutes.numberdetail)
     var myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
    
@@ -107,8 +155,9 @@ const SearchNumber = ({navigation,searchCountry}) => {
       .then(response => response.json())
       .then(result => {
         setLoading(false); 
-        console.log('result',result)
-       navigation.navigate(AuthRoutes.numberdetail,{item:result,selectedCountry:selectedCountry,mobile_number:mobile_number})
+        //console.log('result',result)
+        setDataResult(result)
+      // setRoute(AuthRoutes.numberdetail,{item:result,selectedCountry:selectedCountry,mobile_number:mobile_number})
        
       })
       .catch(error => {
@@ -201,7 +250,7 @@ const handleCountrySelection = (country) => {
       </View>
       <TouchableOpacity
         style={styles.StartButton}
-        onPress={SearchNumberOnline}>
+        onPress={() => SearchNumberOnline()}>
         <Text
           style={{
             textAlign: 'center',

@@ -16,7 +16,7 @@ const initialState = {
   contactPermission: false,
   location: {
     coords: {
-      lattitude: 0,
+      latitude:0,
       longitude:0,
     },
     altitude: 0,

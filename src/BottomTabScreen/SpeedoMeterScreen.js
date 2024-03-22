@@ -186,7 +186,7 @@ const SpeedoMeterScreen = () => {
             style={{
               color: '#1E1F4B',
               alignSelf: 'center',
-              bottom:100,
+              bottom:60,
               textAlign: 'center',
               fontFamily: fonts.Bold,
               fontWeight: '700',

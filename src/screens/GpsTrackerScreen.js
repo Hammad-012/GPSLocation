@@ -30,6 +30,7 @@ import checkPermission from '../logic/checkPermisson';
 import {useCountdown} from '../logic/countdown';
 import getDistance from '../logic/getDistance';
 import {addNewTrack} from '../store/actions/trackAction';
+import LocationPin from '../assests/svgs/Locationpin.svg';
 const initialState = {
   id: '1',
   name: '',
@@ -52,7 +53,7 @@ const GpsTrackerScreen = () => {
   const [location_route, setLocationRoute] = useState([]);
   const mapViewRef = useRef(null);
   const {location} = useSelector(state => state.userReducer);
-
+  console.log('location',location)
   const {track} = useSelector(state => state.trackReducer);
   const [paused, setPaused] = useState(false);
   const [watchid, setWatchId] = useState(null);
@@ -66,9 +67,8 @@ const GpsTrackerScreen = () => {
   const [showtraffic, setShowTraffic] = useState(false);
   const [visibleButton, setShowVisiblebutton] = useState(false);
   const [isModalVisible, setModalVisible] = useState(false);
-  const [isFullScreen, setIsFullScreen] = useState(false);
   const [selectedLayer, setSelectedLayer] = useState('standard');
-
+  
   useEffect(() => {
     if (track_record.name !== '') {
       setTrackRecord(prev => ({
@@ -90,48 +90,16 @@ const GpsTrackerScreen = () => {
         setAlData_Saved(false);
       });
     }
-  }, [track_record,all_data_saved]);
+  }, [track_record, all_data_saved]);
 
-  useEffect(() => {
-    checkPermission()
-      .then(data => {
-        setLocationPermission(false);
-      })
-      .catch(err => {
-        setLocationPermission(true);
-      });
-  }, []);
-
-  const togglePaused = () => {
+  const togglePaused = (isPused) => {
     try {
-      if (paused) {
-        Geolocation.clearWatch(watchid); 
-      } else {
-        let newWatchID = Geolocation.watchPosition(
-          position => {
-            latitude = position.coords.latitude;
-            longitude = position.coords.longitude;
-          },
-          error => {
-            console.log(error);
-          },
-          {
-            accuracy: {
-              android: 'high',
-              ios: 'best',
-            },
-            enableHighAccuracy: false,
-            timeout: 1500,
-            maximumAge: 1000,
-            distanceFilter: 10,
-            forceRequestLocation: true,
-            forceLocationManager: true,
-            showLocationDialog: true,
-          },
-        );
-        setWatchId(newWatchID);
+      if (isPused) {
+        Geolocation.clearWatch(watchid);
+      }else{
+        watchUserPosition()
       }
-      setPaused(!paused);
+      setPaused(!isPused);
     } catch (error) {
       Alert.alert('WatchPosition Error', JSON.stringify(error));
     }
@@ -140,24 +108,24 @@ const GpsTrackerScreen = () => {
   ////END TRACKING
   const EndTracking = () => {
     setSavingTrack(true);
-    setModalVisible(false)
+    setModalVisible(false);
     setShowVisiblebutton(false);
-    setIsStarted(true)
+    setIsStarted(true);
     LocationfromCoords(
       currentLocation.coords.latitude,
       currentLocation.coords.longitude,
       false,
     )
       .then(() => {
-        console.log("LocationFromCoordsFuntion SUccesws");
+        console.log('LocationFromCoordsFuntion SUccesws');
         setIsStarted(false);
-        setTrackRecord(initialState); 
-    Geolocation.clearWatch(watchid); 
-    setLocationRoute([]);
-    setSavingTrack(false);
-    setStart(false);
-    setCountDown(0);
-    setAlData_Saved(false);
+        setTrackRecord(initialState);
+        Geolocation.clearWatch(watchid);
+        setLocationRoute([]);
+        setSavingTrack(false);
+        setStart(false);
+        setCountDown(0);
+        setAlData_Saved(false);
       })
       .catch(err => {
         console.log('catch  LocationFromCoords Error');
@@ -171,38 +139,31 @@ const GpsTrackerScreen = () => {
     });
   };
 
- 
   const watchUserPosition = () => {
-  
     try {
-      let watchID = Geolocation.watchPosition(
+      const watchID = Geolocation.watchPosition(
         position => {
-          //  console.log(position, 'position is watching');
-          if (!paused) {
-            let coords = {
-              latitude: position.coords.latitude,
-              longitude: position.coords.longitude,
-            };
-            let temp = [...location_route];
-            temp.push(coords);
-            setLocationRoute(temp);
-            setCurrentLocation(position);
-            calculate_distance({
-              too: position.coords,
-              speed: position.coords.speed * 3.60934,
-            });
-          }
+          let coords = {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          };
+          let temp = location_route;
+          temp.push(coords);
+          setLocationRoute(temp);
+          setCurrentLocation(position);
+          calculate_distance({
+            too: position.coords,
+            speed: position.coords.speed * 3.60934,
+          });
         },
-        error => {
-          console.log(error);
-        },
+        error => {},
         {
           accuracy: {
             android: 'high',
             ios: 'best',
           },
           enableHighAccuracy: false,
-          timeout: 1500,
+          timeout: 150000,
           maximumAge: 1000,
           distanceFilter: 10,
           forceRequestLocation: true,
@@ -214,7 +175,7 @@ const GpsTrackerScreen = () => {
     } catch (error) {
       Alert.alert('WatchPosition Error', JSON.stringify(error));
     }
-  }
+  };
 
   const StartTracking = () => {
     setStart(true);
@@ -226,17 +187,15 @@ const GpsTrackerScreen = () => {
     });
     watchUserPosition();
     LocationfromCoords(
-      location.coords.latitude,
-      location.coords.longitude,
+      currentLocation.coords.latitude,
+      currentLocation.coords.longitude,
       true,
     ).then(data => {});
   };
 
-  
-
   const calculate_distance = ({too, speed}) => {
     getDistance({
-      from: {lat: currentLocation.coords.latitude, lng: currentLocation.coords.longitude},
+      from: {lat: location.coords.latitude, lng: location.coords.longitude},
       to: {lat: too.latitude, lng: too.longitude},
     }).then(distance => {
       setTrackRecord(prev => ({
@@ -250,12 +209,13 @@ const GpsTrackerScreen = () => {
   };
 
   const LocationfromCoords = (lat, long, is_start) => {
+    console.log('LATITUDE',lat,'LONGITUDE',long)
     return new Promise((resolve, reject) => {
-      const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${long}&format=json&zoom=18&addressdetails=1&accept-language=en`
-      fetch(url,{method: 'GET'})
+      const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${long}&format=json&zoom=18&addressdetails=1&accept-language=en`;
+      fetch(url, {method: 'GET'})
         .then(data => data.json())
         .then(data => {
-          if(!(data.error)) {
+          if (!data.error) {
             if (is_start) {
               setTrackRecord(prev => ({
                 ...prev,
@@ -323,14 +283,12 @@ const GpsTrackerScreen = () => {
   ///Visible Button
   const handlevisibleButton = () => {
     setShowVisiblebutton(!visibleButton);
-      if (!isStarted) { 
-        StartTracking(); 
-        setIsStarted(true); 
-      }
-    else {
-       EndTracking();
+    if (!isStarted) {
+      StartTracking();
+      setIsStarted(true);
+    } else {
+      EndTracking();
       setIsStarted(false);
-     
     }
   };
 
@@ -338,48 +296,47 @@ const GpsTrackerScreen = () => {
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
     if (paused) {
-      setModalVisible(false)
+      setModalVisible(false);
       setPaused(true);
     }
   };
-
-  
 
   return (
     <>
       <View style={{flex: 1, backgroundColor: '#fff'}}>
         <View style={styles.container}>
           <MapView
-            provider={'google'}
-            style={[
-              styles.map,
-              {flex: isFullScreen ? 1 : 0.55},
-              isFullScreen && {height: '100%', width: '100%'},
-            ]}
+            style={styles.map}
             ref={mapViewRef}
-            zoomEnabled={true}
-            maxZoomLevel={4000}
             initialRegion={{
-              latitude: currentLocation.coords.latitude,
-              longitude: currentLocation.coords.longitude,
+              latitude: location.coords.latitude,
+              longitude: location.coords.longitude,
+              latitudeDelta: 0.2,
+              longitudeDelta: 0.05,
+            }}
+            zoomEnabled={true}
+            region={{
+              latitude: location.coords.latitude,
+              longitude: location.coords.longitude,
               latitudeDelta: 0.2,
               longitudeDelta: 0.05,
             }}
             mapType={selectedLayer === 'standard' ? 'standard' : 'satellite'}>
             <Polyline
-              coordinates={location_route}
+              coordinates={[...location_route]}
               strokeColor="#0090FF"
-              strokeWidth={20}
+              strokeWidth={10}
             />
             <Marker
               coordinate={{
                 latitude: currentLocation.coords.latitude,
                 longitude: currentLocation.coords.longitude,
               }}
-              image={require('../assests/images/custompin.png')}
-              title={track_record.start_address}
-              style={{width: 100, height: 100}}
-            />
+            >
+               <LocationPin width={40} height={40}
+               title={track_record.start_address}
+                />
+            </Marker>
           </MapView>
         </View>
         <View
@@ -439,21 +396,7 @@ const GpsTrackerScreen = () => {
               <MapLayer width={40} height={40} style={styles.maplayer} />
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => setIsFullScreen(!isFullScreen)}>
-            <View
-              style={{
-                position: 'absolute',
-                right: wp('-72%'),
-                top: hp('60%'),
-                width: wp(12),
-                height: hp(5),
-                backgroundColor: '#fff',
-                elevation: 10,
-                borderRadius: 10,
-              }}>
-              <FullScreen width={40} height={40} style={styles.FullScreen} />
-            </View>
-          </TouchableOpacity>
+         
         </View>
         <View style={styles.BottomContainer}>
           <View style={styles.TextContainer}>
@@ -480,7 +423,7 @@ const GpsTrackerScreen = () => {
               backgroundColor: '#3972FE',
               width: wp('30%'),
               height: hp('7.3%'),
-              left: 30,
+              left: 31,
               borderRadius: 8,
               bottom: hp(8.5),
               alignSelf: 'flex-end',
@@ -497,7 +440,7 @@ const GpsTrackerScreen = () => {
                 fontWeight: 'bold',
                 fontFamily: fonts.Bold,
               }}>
-               {isStarted ? 'Stop' : 'Start'}
+              {isStarted ? 'Stop' : 'Start'}
             </Text>
           </TouchableOpacity>
           {visibleButton && (
@@ -624,7 +567,7 @@ const GpsTrackerScreen = () => {
                 height: hp('4%'),
                 borderRadius: 10,
               }}
-              onPress={togglePaused}>
+              onPress={() => togglePaused(paused)}>
               <Text
                 style={{
                   textAlign: 'center',
@@ -796,12 +739,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginLeft: 2,
-    marginTop: 1,
   },
-  FullScreen: {
+  Loading: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 2,
-    marginTop: 1,
   },
 });

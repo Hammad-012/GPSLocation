@@ -5,7 +5,7 @@ import HumbergIcon from '../assests/svgs/Humberg.svg';
 const CustomHeader = () => {
     const navigation = useNavigation()
   return (
-    <TouchableOpacity  onPress={() => navigation.toggleDrawer() } style={{marginTop:10,marginLeft: 10,}}>
+    <TouchableOpacity  onPress={() => navigation.toggleDrawer() } style={{marginTop:15,marginLeft: 10,}}>
     <HumbergIcon width={30} height={30} style={styles.HumbergIcon} />
     </TouchableOpacity>
   )

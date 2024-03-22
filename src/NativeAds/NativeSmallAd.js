@@ -13,7 +13,7 @@ import NativeAdView, {
   TestIds,
 } from 'react-native-admob-native-ads';
 import fonts from '../constants/font';
-import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
+import { heightPercentageToDP, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 const SCREEN_WIDTH = wp(100) - 30;
 const NativeSmallAd = ({}) => {
   const nativeAdViewRef = useRef();
@@ -42,16 +42,15 @@ const NativeSmallAd = ({}) => {
       ref={nativeAdViewRef}
       refreshInterval={2000}
       onAdFailedToLoad={err => {
-        //setIsLoading(false)
         console.log(err, 'ERROR IN SMALL ERROR');
       }}
       onNativeAdLoaded={data => {
         setIsLoading(false);
       }}
-      adUnitID="ca-app-pub-3940256099942544/2247696110">
-       <View style={{marginTop:180}}> 
+      adUnitID="ca-app-pub-3940256099942544">
+       <View style={{width:wp(100),marginBottom:20,backgroundColor:'#fff'}}> 
        <View
-          style={{opacity: isloading ? 0 : 1, backgroundColor: '#fff',}}>
+          style={{opacity: isloading ? 0 : 1, backgroundColor: '#fff',height:heightPercentageToDP(13)}}>
           <View style={styles.rowView}>
             <View style={styles.Left}>
               <IconView style={styles.IconView}/>
@@ -66,21 +65,23 @@ const NativeSmallAd = ({}) => {
                   <TaglineView numberOfLines={3} style={styles.tabLineText} />
                   <StarRatingView
                     size={12}
-                    style={{marginTop: 0,justifyContent:'center',}}
+                    style={{marginTop: 0}}
                     emptyIcon={'star-outline'}
                     emptyIconColor={'#0007'}
                   />
                 </View>
+               
               </View>
-            </View>
-          </View>
-        </View>
-        <View style={styles.Right}>
+              <View style={styles.Right}>
               <CallToActionView
                 style={styles.CallToActionView}
                 textStyle={styles.CallToActionViewText}
               />
             </View>
+            </View>
+          </View>
+        </View>
+        
        </View>
     </NativeAdView>
   );
@@ -97,9 +98,10 @@ const styles = StyleSheet.create({
   },
   AdBadge: {
     width: 18,
-    height: 18,
+    height: 20,
     borderWidth: 1,
     color: '#1E1F4B',
+    backgroundColor:'green',
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
@@ -109,7 +111,7 @@ const styles = StyleSheet.create({
   },
   AdBadgeText: {
     fontSize: 9,
-    color: '#1E1F4B',
+    color: '#fff',
     includeFontPadding: false,
   },
   Left: {
@@ -129,36 +131,26 @@ const styles = StyleSheet.create({
 
   tabLineText: {
     fontFamily: fonts.Medium,
-    width: SCREEN_WIDTH * 0.73,
+    width: SCREEN_WIDTH * 0.6,
     fontSize: 9,
     color: '#1E1F4B',
     flexWrap: 'wrap',
-    justifyContent:'center',
-    alignItems:'center',
-    alignSelf:'center',
     flexShrink: 1,
     textAlign:'center',
-    marginLeft:30
   },
   HeadlineView: {
     color: '#1E1F4B',
     fontFamily: fonts.SemiBold,
     flexDirection: 'column',
-    width: SCREEN_WIDTH * 0.51,
-    flexWrap: 'wrap',
-    justifyContent:'center',
-    alignItems:'center',
-    alignSelf:'center',
+    width: SCREEN_WIDTH * 0.6,
     fontSize: 10,
   },
   CallToActionView: {
     height: 30,
     width: SCREEN_WIDTH * 0.69,
     borderRadius: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: 'green',
-    marginLeft:30
+    
   },
   CallToActionViewText: {
     width:SCREEN_WIDTH,
@@ -170,7 +162,8 @@ const styles = StyleSheet.create({
   },
   Right:{
     width:SCREEN_WIDTH,
-    marginTop:-30,
-    
+    justifyContent:'center',
+    alignItems:'center',
+    marginLeft:-30
   }
 });

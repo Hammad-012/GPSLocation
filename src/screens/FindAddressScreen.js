@@ -331,10 +331,8 @@ const FindAddressScreen = () => {
                 position: 'absolute',
                 right: wp('-5%'),
                 top: hp('28%'),
-
                 evation: 10,
                 backgroundColor: '#fff',
-
                 ...Platform.select({
                   ios: {
                     width: wp(12),
@@ -351,14 +349,12 @@ const FindAddressScreen = () => {
             </View>
           </TouchableOpacity>
         </View>
-        <View style={styles.BottomContainer}>
+       <View style={styles.bottom}>
           <View style={styles.TextContainer}>
             <Text
               style={{
-                ...Platform.select({
-                  ios: {marginTop: 15},
-                  android: {marginTop: 10},
-                }),
+                justifyContent:'center',
+                margin:10,
                 width: wp(60),
                 paddingLeft: 5,
               }}
@@ -373,15 +369,16 @@ const FindAddressScreen = () => {
               width: wp('30%'),
               height: hp('7.3%'),
               borderRadius: 8,
-              alignSelf: 'flex-end',
               justifyContent: 'center',
               alignItems: 'center',
-              left: 32,
-              bottom: 66,
+              alignSelf:'flex-end',
+              position:'absolute',
+              top:15,
+              right:10
             }}>
             <NavigationIcon style={styles.NavigationIcon} />
           </TouchableOpacity>
-        </View>
+          </View>
       </View>
     </>
   );
@@ -408,22 +405,9 @@ const styles = StyleSheet.create({
     top: 20,
     left: 20,
   },
-  BottomContainer: {
-    position: 'absolute',
-    bottom: 0,
-    borderRadius: 15,
-    width: wp('90%'),
-    height: hp('15%'),
-    shadowOffset: {
-      width: 0,
-    },
-    shadowColor: 'black',
-    shadowOpacity: 0.24,
-    shadowRadius: 10,
-  },
+
   TextContainer: {
     margin: 10,
-    textAlign: 'center',
     marginTop: 15,
     borderRadius: 7,
     backgroundColor: '#F9F9F9',
@@ -433,34 +417,14 @@ const styles = StyleSheet.create({
       width: 0,
     },
     shadowColor: 'black',
+    elevation:10
   },
   NavigationIcon: {
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf: 'center',
+  
   },
-  button: {
-    backgroundColor: '#F9F9F9',
-    width: wp('30%'),
-    height: hp('7%'),
-    borderRadius: 8,
-  },
-  buttonText: {
-    color: '#1E1F4B',
-    fontSize: 8,
-    fontWeight: '700',
-    justifyContent: 'center',
-  },
-  HideContainer: {
-    backgroundColor: '#fff',
-    width: wp('90%'),
-    height: hp('50%'),
-    shadowColor: 'black',
-    borderRadius: 10,
-    shadowOffset: {
-      width: 0,
-    },
-  },
+
   CurrentLocation: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -491,4 +455,9 @@ const styles = StyleSheet.create({
     marginLeft: 2,
     marginTop: 2,
   },
+  bottom:{
+    
+    position:'absolute',
+    bottom:25
+  }
 });

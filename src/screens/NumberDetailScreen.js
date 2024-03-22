@@ -32,6 +32,7 @@ import {
   SearchNumberValidationIOS,
   search_mobileNumber,
 } from '../Validation/SearchNumberValidation';
+
 const NumberDetailScreen = ({navigation, route}) => {
   const items = route.params?.item;
   const countrycode = route?.params?.selectedCountry;

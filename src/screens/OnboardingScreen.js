@@ -33,8 +33,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useSelector} from 'react-redux';
 import fonts from '../constants/font';
 import Onboarding from '../components/Onboarding';
-import { enableScreens } from 'react-native-screens';
 import NativeSmallAd from '../NativeAds/NativeSmallAd';
+import { NativeBanner } from '../NativeAds/NativeBannerads';
 const Simple = () => {
   const {selectedLanguage} = useSelector(state => state.languageReducer);
   const dispatch = useDispatch();
@@ -45,20 +45,18 @@ const Simple = () => {
   const navigation = useNavigation();
   const [isEnabledLocation, setIsEnabledLocation] = useState(false);
   const [isEnabledContact, setIsEnabledContact] = useState(false);
-  const [isLocationPermissionGranted, setIsLocationPermissionGranted] =useState(false);
+  const [isLocationPermissionGranted, setIsLocationPermissionGranted] = useState(false);
   const [isContactPermissionGranted, setIsContactPermissionGranted] = useState(false);
+
   useEffect(() => {
     const checkPermissionStatus = async () => {
-      const status = await AsyncStorage.getItem('locationPermission');
-      console.log('location status', status);
-      setIsLocationPermissionGranted(status === 'granted');
+      const locationStatus = await AsyncStorage.getItem('locationPermission');
+      setIsLocationPermissionGranted(locationStatus === 'granted');
+      setIsEnabledLocation(locationStatus === 'granted');
 
       const contactStatus = await AsyncStorage.getItem('contactPermission');
-      console.log('contact status', contactStatus);
       setIsContactPermissionGranted(contactStatus === 'granted');
-      if (status === 'granted' && contactStatus === 'granted') {
-        navigateToMainScreen();
-      }
+      setIsEnabledContact(contactStatus === 'granted');
     };
 
     checkPermissionStatus();
@@ -66,92 +64,48 @@ const Simple = () => {
 
   const toggleSwitch = async () => {
     if (!isLocationPermissionGranted) {
-      setIsEnabledLocation(previousState => !previousState);
       requestLocationPermission();
-      await AsyncStorage.setItem('locationPermission', 'granted');
-    } else {
-      navigateToMainScreen();
     }
   };
 
   const toggleSwitchContact = async () => {
     if (!isContactPermissionGranted) {
-      setIsEnabledContact(previousState => !previousState);
       requestContactPermission();
-      await AsyncStorage.setItem('contactPermission', 'granted');
-    } else {
-      navigateToMainScreen();
     }
   };
 
-  const requestLocationPermission = () => {
+  const requestLocationPermission = async () => {
+    let permission;
     if (Platform.OS === 'ios') {
-      request(PERMISSIONS.IOS.LOCATION_ALWAYS).then(result => {
-        setIsLocationPermissionGranted(result === 'granted');
-        if (result === 'granted') {
-          AsyncStorage.setItem('locationPermission', 'granted');
-        }
-      });
+      permission = await request(PERMISSIONS.IOS.LOCATION_ALWAYS);
     } else {
-      request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION).then(resultFine => {
-        if (resultFine === 'granted') {
-          setIsLocationPermissionGranted(true);
-          AsyncStorage.setItem('locationPermission', 'granted');
-        } else {
-          request(PERMISSIONS.ANDROID.ACCESS_COARSE_LOCATION).then(
-            resultCoarse => {
-              setIsLocationPermissionGranted(resultCoarse === 'granted');
-              if (resultCoarse === 'granted') {
-                AsyncStorage.setItem('locationPermission', 'granted');
-              }
-            },
-          );
-        }
-      });
+      permission = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION);
+    }
+    if (permission === 'granted') {
+      AsyncStorage.setItem('locationPermission', 'granted');
+      setIsLocationPermissionGranted(true);
+      setIsEnabledLocation(true);
+    } else {
+      Alert.alert('Location permission denied');
     }
   };
-  useEffect(() => {
-    if (isLocationPermissionGranted) {
-      Geolocation.getCurrentPosition(
-        position => {
-          console.log('onbaording', position);
-          dispatch(setLocation(position));
-          //  setUserLocation({
-          //   latitude:position.coords.latitude,
-          //   longitude:position.coords.longitude
-          //  })
-        },
-        error => {
-          console.log(error);
-        },
-        {enableHighAccuracy: false, timeout: 20000, maximumAge: 1000},
-      );
-    }
-  }, [isLocationPermissionGranted]);
 
-  const requestContactPermission = () => {
+  const requestContactPermission = async () => {
+    let permission;
     if (Platform.OS === 'ios') {
-      request(PERMISSIONS.IOS.CONTACTS).then(result => {
-        setIsContactPermissionGranted(result === 'granted');
-        console.log('result in if condition', result);
-      });
+      permission = await request(PERMISSIONS.IOS.CONTACTS);
     } else {
-      request(PERMISSIONS.ANDROID.READ_CONTACTS).then(result => {
-        setIsContactPermissionGranted(result === 'granted');
-        console.log('result in else condition', result);
-      });
+      permission = await request(PERMISSIONS.ANDROID.READ_CONTACTS);
+    }
+    if (permission === 'granted') {
+      AsyncStorage.setItem('contactPermission', 'granted');
+      setIsContactPermissionGranted(true);
+      setIsEnabledContact(true);
+    } else {
+      Alert.alert('Contact permission denied');
     }
   };
- 
-  const checkPermissionsAndNavigate = () => {
-    // If both permissions are granted, navigate to the main screen
-    if (isLocationPermissionGranted && isContactPermissionGranted) {
-      navigateToMainScreen();
-    }
-    else {
-      Alert.alert('Allow Both Permission for Location and Contact')
-    }
-  };
+
 
   const navigateToMainScreen = () => {
     dispatch(setHomeScreen(true));
@@ -171,12 +125,13 @@ const Simple = () => {
   );
 
   return (
+    <>
     <View style={{flex: 1}}>
       <View style={{width: wp(100), height: hp(65)}}>
         <Onboarding
           showSkip={true}
           skipToPage={0}
-          onDone={checkPermissionsAndNavigate}
+          onDone={navigateToMainScreen}
           bottomBarHighlight={false}
           NextButtonComponent={CustomButton}
           DoneButtonComponent={CustomButton}
@@ -373,16 +328,12 @@ const Simple = () => {
                         {selectedLanguage.Allow_permission}
                       </Text>
                       <Switch
-                        trackColor={{false: '#767577', true: 'green'}}
-                        thumbColor={isEnabledLocation ? '#E8F5E9' : '#f4f3f4'}
-                        ios_backgroundColor="#3e3e3e"
-                        onValueChange={toggleSwitch}
-                        value={isEnabledLocation}
-                        style={{
-                          justifyContent:'center',
-                          alignItems:'center',
-                        }}
-                      />
+                      trackColor={{false: '#767577', true: 'green'}}
+                      thumbColor={isEnabledLocation ? '#E8F5E9' : '#f4f3f4'}
+                      ios_backgroundColor="#3e3e3e"
+                      onValueChange={toggleSwitch}
+                      value={isEnabledLocation}
+                    />
                     </View>
                   </View>
 
@@ -412,10 +363,6 @@ const Simple = () => {
                       ios_backgroundColor="#3e3e3e"
                       onValueChange={toggleSwitchContact}
                       value={isEnabledContact}
-                      style={{
-                        justifyContent:'center',
-                        alignItems:'center',
-                      }}
                     />
                     </View>
                   </View>
@@ -426,8 +373,10 @@ const Simple = () => {
           ]}
         />
       </View>
-       <NativeSmallAd /> 
+      <NativeBanner type={"video"} media={true} />
     </View>
+    
+    </>
   );
 };
 const styles = StyleSheet.create({
